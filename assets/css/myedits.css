@@ -1,0 +1,143 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #212121;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 230px;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.menu-btn {
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    display: none;
+    margin-right: 10px;
+}
+
+ul.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu li {
+    margin: 0 10px;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+ul.menu li a.active,
+ul.menu li a:hover {
+    background-color: #48cfcb;
+    border-radius: 5px;
+}
+
+.conHead {
+    display: none;
+}
+
+.lancwaywelcome {
+    margin-top: 250px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .conHead {
+        display: block;
+    }
+
+    .lancwaywelcome {
+        margin-top: 0px;
+        margin: 5px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .buttonhead {
+        display: none;
+    }
+
+    ul.menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(11, 11, 11, 0.9);
+        top: 69px;
+        left: 0;
+        width: 100%;
+        height: 90vh;
+        padding: 0;
+        transition: all 0.7s ease-in;
+    }
+
+    ul.menu.active {
+        display: block;
+    }
+
+    ul.menu li {
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    ul.menu li a {
+        display: block;
+    }
+
+    .logo img {
+        width: 180px;
+        margin: 8px 0;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Courier, monospace;
+        font-weight: 700;
+    }
+
+    .about h2{
+        margin-left: 10px;
+    }
+    .about .container p{
+        margin: 10px;
+    }
+}
+
+.buttonhead {
+    background-color: #48cfcb;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.buttonhead:hover {
+    background-color: #229799;
+    transition: all 0.3s ease-in;
+}
